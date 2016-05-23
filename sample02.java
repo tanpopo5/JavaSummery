@@ -16,6 +16,7 @@ public class sample02 extends JFrame
 	public sample02()
 	{
 		panel = new JPanel();
+		setSize(250, 200);
 
 		setTitle("sample02");
 
@@ -27,18 +28,18 @@ public class sample02 extends JFrame
 		btn2 = new JButton("BLUE");
 		btn2.addActionListener(listener);
 
-		setVisble(true);
+		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 
 		panel.add(btn1);
 		panel.add(btn2);
 		add(panel);
 
-		pack();
+		//pack();
 
 	}
 
-	private class ButtonListener implement ActionListener
+	private class ButtonListener implements ActionListener
 	{
 		public void actionPerformed(ActionEvent e)
 		{
