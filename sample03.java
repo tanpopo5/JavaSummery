@@ -51,6 +51,9 @@ public class sample03 extends JFrame
 		label2 = new JLabel("Yourname:");
 		panel.add(label2);
 		text2 = new JTextField(15);
+		
+		//prevent entering text
+		text2.setEditable(false);
 		panel.add(text2);
 
 	}
@@ -59,7 +62,10 @@ public class sample03 extends JFrame
 	{
 		public void actionPerformed(ActionEvent e)
 		{
+			//to get the text from text1
 			String name = text1.getText();
+
+			//to put text into text2
 			text2.setText(name);
 
 		}
